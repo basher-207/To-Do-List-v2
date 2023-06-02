@@ -9,21 +9,15 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://127.0.0.1:27017/toDoListDB');
+// mongoose.connect('mongodb://127.0.0.1:27017/toDoListDB');  //This is for local connection
+mongoose.connect('mongodb+srv://basher207:todolistv2@cluster0.z2chvla.mongodb.net/toDoListDB'); //This working with already created MongoDB Atlass project
 
 const itemSchema = new mongoose.Schema({
     task: {type: String, required: true}
 })
 
-// const listSchema = new mongoose.Schema({
-//     name: {type: String, required: true},
-//     items: [itemSchema]
-// })
-
 const Item = mongoose.model("Item", itemSchema);
-// const List = mongoose.model("List", listSchema);
 
-let workList = [];
 
 //DEFAULT LIST
 app.get("/", function(req, res){
