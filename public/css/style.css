@@ -1,0 +1,137 @@
+/* Color Theme Swatches in Hex */
+.Графический-дизайн-1-hex { color: #D9D8D7; }
+.Графический-дизайн-2-hex { color: #BFBDBA; }
+.Графический-дизайн-3-hex { color: #8C8681; }
+.Графический-дизайн-4-hex { color: #59524F; }
+.Графический-дизайн-5-hex { color: #736B66; }
+
+/* Color Theme Swatches in RGBA */
+.Графический-дизайн-1-rgba { color: rgba(216, 216, 214, 1); }
+.Графический-дизайн-2-rgba { color: rgba(191, 188, 185, 1); }
+.Графический-дизайн-3-rgba { color: rgba(140, 134, 129, 1); }
+.Графический-дизайн-4-rgba { color: rgba(89, 82, 78, 1); }
+.Графический-дизайн-5-rgba { color: rgba(114, 106, 102, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Графический-дизайн-1-hsla { color: hsla(45, 2, 84, 1); }
+.Графический-дизайн-2-hsla { color: hsla(33, 4, 73, 1); }
+.Графический-дизайн-3-hsla { color: hsla(28, 4, 52, 1); }
+.Графический-дизайн-4-hsla { color: hsla(22, 6, 32, 1); }
+.Графический-дизайн-5-hsla { color: hsla(22, 5, 42, 1); }
+
+body{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.4rem;
+
+    text-align: center;
+    color: #59524F;
+
+    background-color: #BFBDBA;
+}
+
+h1{  
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+
+    border-radius: 0.5rem;
+    width: 400px;
+    padding: 0.5rem;
+    margin: 5rem auto 2rem;
+
+    background-color: #D9D8D7;
+}
+
+h2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5rem;
+
+    border-radius: 0.5rem;
+    width: 400px;
+    padding: 0.5rem;
+    margin: 0 auto 2rem;
+
+    background-color: #D9D8D7;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+    font-size: 1.4rem;
+
+    padding: 0;
+}
+
+form{
+    padding: 0.5rem;
+}
+
+button{
+    border: solid 1px #59524F;
+    border-radius: 0.5rem;
+
+    background-color: inherit;
+
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.4rem;
+    color: #59524F;
+
+    opacity: 0.5;
+}
+
+footer{
+    font-size: 1rem;
+
+    margin-top: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #59524F;
+
+    opacity: 0.5;
+}
+
+.big-boxs{
+    text-align: center;
+
+    border-radius: 0.5rem;
+    width: 400px;
+    padding: 0.5rem;
+    margin: 1rem auto 0;
+
+    background-color: #D9D8D7;    
+}
+
+.delete{
+    margin-top: 0.5rem;
+}
+
+.ul-boxs{
+    display: flex;
+    padding: 0;
+}
+
+.ul-boxs input{
+    margin: auto 1rem
+}
+
+input[type="text"]{
+    border: none;
+    border-radius: 0.5rem;
+
+    height: 2.2rem;
+    width: 300px;
+
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.4rem;
+    color: #59524F;
+}
+
+button:hover, a:hover{
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.cross{
+    text-decoration: line-through #8C8681;
+}

@@ -1,0 +1,29 @@
+<%- include("header"); %>
+
+<h1><%= listTitle %></h1>
+
+<div class="big-boxs items-box">
+    <% for(let i = 0; i < tasks.length; i++){ %>
+    <ul>
+        <div class="ul-boxs">
+            <input type="checkbox" id="<%= tasks[i]._id %>">
+            <li id="<%= tasks[i]._id %>"> <%= tasks[i].task %> </li>
+        </div> 
+    </ul>
+    <% } %>
+</div>
+
+<form class="delete" action="/delete" method="post">
+    <input type="hidden" name="elemetsToDelete" >
+    <button type="submit">Delete Selected Items</button>
+</form>
+
+<div class="big-boxs">
+    <form action="<%= buttonActionType %>" method="post">
+        <input type="text" name="elementToAdd" placeholder="New task...">
+        <button type="submit" name="button">Add</button>
+    </form>
+</div>
+
+    
+<%- include("footer"); %>
